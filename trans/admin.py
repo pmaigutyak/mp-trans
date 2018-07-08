@@ -15,7 +15,7 @@ class TranslationAdmin(admin.TranslationAdmin):
 
         options = {}
 
-        languages = dict(settings.LANGUAGES).keys()
+        languages = list(dict(settings.LANGUAGES).keys())
 
         languages.remove(origin_lang)
 
